@@ -1,31 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Выбери свой продукт</h1>
+<html lang="ru">
+<head>
+  <!-- Кодировка сайта. Нужна, чтобы русский текст отображался правильно -->
+  <meta charset="UTF-8">
 
-    <ul>
-        <div>
-            <img src="images/moisturizing_mousse.jpg" alt="Moisturizing mousse" width="290" height="235"/>
+  <!-- Настройка адаптации сайта под телефоны и планшеты -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <p>для нормальной кожи</p>
-            <h2>Увлажняющий мусс</h2>
-            <p>Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+  <!-- Название вкладки браузера -->
+  <title>Diamant Products</title>
 
-            <span>Состав: </span>
-        
-            <ul>
-                <li>активные натуральные комплексы</li>
-                <li>витамины С, А, РР, В И Е</li>
-                <li>солнцезащитные компоненты</li>
-            </ul>
-            <b> Цена </b>
-            <span> 2 750 &#8381; руб </span>
+  <!-- Подключение CSS-файла к HTML -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ==================================================
+    СЕКЦИЯ PRODUCTS
+
+    Это главный блок с товарами.
+
+    Внутри находятся:
+    1. Заголовок секции
+    2. Сетка карточек
+    3. Отдельные карточки товаров
+
+    CSS-класс:
+    .products
+  ================================================== -->
+  <section class="products">
+
+    <!-- ==================================================
+      ГЛАВНЫЙ ЗАГОЛОВОК СЕКЦИИ
+
+      h1 — это главный заголовок данного блока.
+      На одной странице желательно использовать один главный h1.
+
+      CSS-класс:
+      .products__title
+    ================================================== -->
+    <h1 class="products__title">Выбери свой продукт</h1>
+
+    <!-- ==================================================
+      СЕТКА КАРТОЧЕК
+
+      Этот div является контейнером для всех карточек.
+      Именно к нему в CSS применяется display: grid.
+
+      CSS-класс:
+      .products__grid
+    ================================================== -->
+    <div class="products__grid">
+
+      <!-- ==================================================
+        КАРТОЧКА ТОВАРА №1
+
+        article используется для самостоятельного элемента.
+        Здесь один article = один товар.
+
+        Чтобы добавить новый товар:
+        скопируй весь блок article и измени данные внутри.
+
+        CSS-класс:
+        .product-card
+      ================================================== -->
+      <article class="product-card">
+
+        <!-- Блок изображения товара -->
+        <div class="product-card__image">
+          <img src="images/products/moisturizing-mousse.jpg" alt="Moisturizing Mousse">
         </div>
-    </ul>
-  </body>
+
+        <!-- Блок всей текстовой информации карточки -->
+        <div class="product-card__content">
+
+          <!-- Категория товара -->
+          <p class="product-card__category">Для нормальной кожи</p>
+
+          <!-- Название товара -->
+          <h2 class="product-card__title">Увлажняющий мусс</h2>
+
+          <!-- Краткое описание товара -->
+          <p class="product-card__description">
+            Глубоко увлажняет кожу лица, оставляя её мягкой и гладкой.
+          </p>
+
+          <!-- Блок состава товара -->
+          <div class="product-card__composition">
+            <p>Состав:</p>
+
+            <!-- Список ингредиентов -->
+            <ul>
+              <li>активные натуральные комплексы</li>
+              <li>витамины C, A, PP, B и E</li>
+              <li>солнцезащитные компоненты</li>
+            </ul>
+          </div>
+
+          <!-- Нижняя строка с ценой -->
+          <div class="product-card__price-row">
+            <span class="product-card__price-label">Цена</span>
+            <span class="product-card__price">2 750 ₽</span>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- КАРТОЧКА ТОВАРА №2 -->
+      <article class="product-card">
+        <div class="product-card__image">
+          <img src="images/products/moisturizing-mask.jpg" alt="Moisturizing Mask">
+        </div>
+
+        <div class="product-card__content">
+          <p class="product-card__category">Для нормальной кожи</p>
+
+          <h2 class="product-card__title">Увлажняющая маска</h2>
+
+          <p class="product-card__description">
+            Способствует удержанию влаги в верхних слоях кожи.
+          </p>
+
+          <div class="product-card__composition">
+            <p>Состав:</p>
+            <ul>
+              <li>воски</li>
+              <li>минералы</li>
+              <li>масла</li>
+            </ul>
+          </div>
+
+          <div class="product-card__price-row">
+            <span class="product-card__price-label">Цена</span>
+            <span class="product-card__price">3 500 ₽</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- КАРТОЧКА ТОВАРА №3 -->
+      <article class="product-card">
+        <div class="product-card__image">
+          <img src="images/products/facial-cleanser.jpg" alt="Facial Cleanser">
+        </div>
+
+        <div class="product-card__content">
+          <p class="product-card__category">Для нормальной кожи</p>
+
+          <h2 class="product-card__title">Гель для умывания</h2>
+
+          <p class="product-card__description">
+            Интенсивно очищает, не повреждает защитный барьер кожи.
+          </p>
+
+          <div class="product-card__composition">
+            <p>Состав:</p>
+            <ul>
+              <li>минералы</li>
+              <li>витамины C, A, PP, B и E</li>
+              <li>солнцезащитные компоненты</li>
+            </ul>
+          </div>
+
+          <div class="product-card__price-row">
+            <span class="product-card__price-label">Цена</span>
+            <span class="product-card__price">1 650 ₽</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- КАРТОЧКА ТОВАРА №4 -->
+      <article class="product-card">
+        <div class="product-card__image">
+          <img src="images/products/gift-set-01.jpg" alt="Gift Set 01">
+        </div>
+
+        <div class="product-card__content">
+          <p class="product-card__category">Для нормальной кожи</p>
+
+          <h2 class="product-card__title">Подарочный набор №1</h2>
+
+          <p class="product-card__description">
+            Набор, состоящий из увлажняющего крема и маски.
+          </p>
+
+          <div class="product-card__composition">
+            <p>Состав:</p>
+            <ul>
+              <li>воски</li>
+              <li>минералы</li>
+              <li>масла</li>
+            </ul>
+          </div>
+
+          <div class="product-card__price-row">
+            <span class="product-card__price-label">Цена</span>
+            <span class="product-card__price">4 750 ₽</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- КАРТОЧКА ТОВАРА №5 -->
+      <article class="product-card">
+        <div class="product-card__image">
+          <img src="images/products/gift-set-05.jpg" alt="Gift Set 05">
+        </div>
+
+        <div class="product-card__content">
+          <p class="product-card__category">Для нормальной кожи</p>
+
+          <h2 class="product-card__title">Подарочный набор №5</h2>
+
+          <p class="product-card__description">
+            Весь набор средств: крем, маска, мусс и гель для умывания.
+          </p>
+
+          <div class="product-card__composition">
+            <p>Состав:</p>
+            <ul>
+              <li>воски</li>
+              <li>минералы</li>
+              <li>масла</li>
+            </ul>
+          </div>
+
+          <div class="product-card__price-row">
+            <span class="product-card__price-label">Цена</span>
+            <span class="product-card__price">7 520 ₽</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</body>
 </html>

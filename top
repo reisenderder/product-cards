@@ -1,0 +1,26 @@
+*   [33mcommit e82844aa43aebca4050b82af841c11b6e239702b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/03-homework[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+[31m|[m[32m\[m  Merge: 5244819 13f51ef
+[31m|[m [32m|[m Author: Rasul Dzhandarov <djrasul46@gmail.com>
+[31m|[m [32m|[m Date:   Sat Jun 20 21:45:18 2026 +0300
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     Merge pull request #1 from reisenderder/feature/02-homework
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     (homework № 2): finished hw 2
+[31m|[m [32m|[m 
+[31m|[m * [33mcommit 13f51ef8b6e70f41ba653a134d2d11913e33252a[m[33m ([m[1;31morigin/feature/02-homework[m[33m, [m[1;32mfeature/02-homework[m[33m)[m
+[31m|[m [32m|[m Author: reisenderder <djrasul46@gmail.com>
+[31m|[m [32m|[m Date:   Sat Jun 20 21:40:58 2026 +0300
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     made some changes
+[31m|[m [32m|[m 
+[31m|[m * [33mcommit 031228ce9e66d69a1b81e39acab7113653dba841[m
+[31m|[m[31m/[m  Author: reisenderder <djrasul46@gmail.com>
+[31m|[m   Date:   Sat Jun 20 21:18:54 2026 +0300
+[31m|[m   
+[31m|[m       finished 2 hw
+[31m|[m 
+* [33mcommit 5244819061012d8fd935f6fe1fa585211d188e30[m
+  Author: Rasul Dzhandarov <djrasul46@gmail.com>
+  Date:   Sat Jun 20 21:07:49 2026 +0300
+  
+      Initial commit
