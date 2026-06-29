@@ -29,7 +29,7 @@
 */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
   color: #555577;
 }
@@ -88,12 +88,14 @@ body {
   color задает цвет заголовка.
 */
 .products__title {
-  margin: 0 0 90px;
   text-align: center;
-  font-size: 58px;
-  line-height: 1.1;
-  font-weight: 300;
-  color: #525174;
+  font-size: 70px;
+  line-height: 78px;
+  color: #515076;
+  max-width: 846px;
+  width: 100%;
+  font-weight: 400;
+  margin: 140px auto 40px;
 }
 
 /* ==================================================
