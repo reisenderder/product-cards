@@ -22,6 +22,7 @@ body {
 
 .products__title {
   text-align: center;
+<<<<<<< Updated upstream
   font-size: 70px;
   line-height: 78px;
   color: #515076;
@@ -29,6 +30,13 @@ body {
   width: 100%;
   font-weight: 400;
   margin: 140px auto 40px;
+=======
+  transition: color 0.3s ease;
+}
+
+.products__title.active-color {
+  color: #ffe600;
+>>>>>>> Stashed changes
 }
 
 .products__grid {
@@ -142,3 +150,85 @@ body {
     height: 220px;
   }
 }
+
+.products button {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px;
+  
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 6px;
+  
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+
+  transition: background-color 0.2s ease-in-out, 
+    transform 0.2s ease-in-out, 
+    box-shadow 0.2s ease-in-out;
+}
+
+.products button:hover {
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.products button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.products button:focus-visible {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+}
+
+#toggle-color-btn {
+  background-color: #8B5CF6;
+}
+#toggle-color-btn:hover {
+  background-color: #7C3AED;
+}
+
+#change-color-all-card {
+  background-color: #10B981;
+}
+#change-color-all-card:hover {
+  background-color: #059669;
+}
+
+#change-color-first-card {
+  background-color: #06B6D4;
+}
+#change-color-first-card:hover {
+  background-color: #0891B2;
+}
+
+#open-google {
+  background-color: #3B82F6;
+}
+
+#open-google:hover {
+  background-color: #2563EB;
+}
+
+#output-console-log {
+  background-color: #475569;
+}
+#output-console-log:hover {
+  background-color: #334155;
+}
+
+.products__title {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 15px 6px;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.products__title--active {
+  color: #FF00FF;
+}}
