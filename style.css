@@ -22,6 +22,7 @@ body {
 
 .products__title {
   text-align: center;
+<<<<<<< Updated upstream
   font-size: 70px;
   line-height: 78px;
   color: #515076;
@@ -29,6 +30,8 @@ body {
   width: 100%;
   font-weight: 400;
   margin: 140px auto 40px;
+=======
+>>>>>>> Stashed changes
   transition: color 0.3s ease;
 }
 
